@@ -27,6 +27,7 @@
         <module>002-AnnoMapping</module>
         <module>003-TypeHandler</module>
         <module>004-Plugins</module>
+        <module>005-CRUD</module>
     </modules>
 
     <dependencies>

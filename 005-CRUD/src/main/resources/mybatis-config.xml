@@ -10,11 +10,6 @@
         <typeHandler handler="org.apache.ibatis.type.EnumTypeHandler" javaType="entity.Gender"/>
     </typeHandlers>
 
-    <plugins>
-        <plugin interceptor="plugin.MyPlugin">
-            <property name="eg" value="100"/>
-        </plugin>
-    </plugins>
 
     <environments default="development">
         <environment id="development">
@@ -29,6 +24,7 @@
     </environments>
 
     <mappers>
-        <package name="mapper"/>
+        <mapper resource="mapper/UserMapper.xml"/>
     </mappers>
+
 </configuration>
