@@ -26,6 +26,7 @@
         <module>001-XMLConfiguration</module>
         <module>002-AnnoMapping</module>
         <module>003-TypeHandler</module>
+        <module>004-Plugins</module>
     </modules>
 
     <dependencies>
