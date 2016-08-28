@@ -28,6 +28,7 @@
         <module>003-TypeHandler</module>
         <module>004-Plugins</module>
         <module>005-CRUD</module>
+        <module>006-Tag_Sql</module>
     </modules>
 
     <dependencies>
