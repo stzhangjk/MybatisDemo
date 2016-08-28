@@ -31,6 +31,7 @@
         <module>006-Tag_Sql</module>
         <module>007-ResultMap</module>
         <module>008-Collection</module>
+        <module>009-DynamicSql</module>
     </modules>
 
     <dependencies>
