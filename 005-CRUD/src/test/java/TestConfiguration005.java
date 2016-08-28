@@ -26,7 +26,7 @@ public class TestConfiguration005 {
     }
 
     @Test
-    public void test() {
+    public void testInsert() {
         try(SqlSession session = sf.openSession()){
             User user = new User();
             user.setGender(Gender.WOMAN);

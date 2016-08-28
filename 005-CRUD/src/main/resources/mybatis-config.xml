@@ -6,6 +6,10 @@
 <configuration>
     <properties resource="connect.properties"/>
 
+    <typeAliases>
+        <typeAlias type="entity.User" alias="User"/>
+    </typeAliases>
+
     <typeHandlers>
         <typeHandler handler="org.apache.ibatis.type.EnumTypeHandler" javaType="entity.Gender"/>
     </typeHandlers>
