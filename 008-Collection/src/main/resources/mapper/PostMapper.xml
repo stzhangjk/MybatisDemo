@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="PostMapper">
+
+    <resultMap id="postMap" type="entity.Post">
+        <id property="id" column="id" javaType="int"/>
+        <result property="content" column="content" javaType="String"/>
+        <association property="author" column="author_id" javaType="entity.Author" select="AuthorMapper.selectOne"/>
+    </resultMap>
+
+    <select id="selectOne" resultType="entity.Post">
+        select * from `_post008` where id = #{id}
+    </select>
+
+    <select id="selectByBlogId" resultType="ArrayList" parameterType="int" resultMap="postMap">
+        select * from `_post008` where blog_id=#{blogId}
+    </select>
+</mapper>
