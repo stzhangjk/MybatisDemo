@@ -5,8 +5,9 @@
 <mapper namespace="PostMapper">
 
     <resultMap id="postMap" type="entity.Post">
-        <id property="id" column="id" javaType="int"/>
-        <result property="content" column="content" javaType="String"/>
+        <!--自动映射部分属性-->
+        <!--<id property="id" column="id" javaType="int"/>-->
+        <!--<result property="content" column="content" javaType="String"/>-->
         <association property="author" column="author_id" javaType="entity.Author" select="AuthorMapper.selectOne"/>
     </resultMap>
 
