@@ -32,6 +32,7 @@
         <module>007-ResultMap</module>
         <module>008-Collection</module>
         <module>009-DynamicSql</module>
+        <module>010-Spring4.2.5-Mybatis3.4.0</module>
     </modules>
 
     <dependencies>
